@@ -8,22 +8,3 @@ The "detector.py" script is responsible for real-time face detection. It continu
 The "apprentissage.py" script is used for training the face recognition model. It reads a dataset of labeled face images, extracts the faces using Haar cascade detection, assigns unique identifiers to each face, and trains the LBPH (Local Binary Patterns Histograms) face recognizer. The trained model is then saved to "trainingData.yml" for later use in face recognition.
 
 Overall, this project provides a real-time face detection and recognition system that can be used for various applications, such as access control, surveillance, and personalized user experiences. It leverages computer vision techniques and the OpenCV library to achieve accurate and efficient face detection and recognition capabilities.
-In this project, the following techniques and libraries are used for each file:
-
-prise.py:
-
-Technique: Real-time image capture, face detection, face recognition.
-Libraries used: OpenCV (cv2) for image capture, face detection, and result display.
-haarcascade_frontalface_default.xml:
-
-Technique: Face detection using Haar cascade classifier.
-Libraries used: No specific library, this file contains the parameters of the pre-trained Haar cascade classifier.
-detector.py:
-
-Technique: Real-time face detection, face recognition.
-Libraries used: OpenCV (cv2) for real-time image capture, face detection, face recognition, and result display.
-apprentissage.py:
-
-Technique: Training a face recognition model based on LBPH (Local Binary Patterns Histograms) algorithm.
-Libraries used: OpenCV (cv2) for image preprocessing (conversion to grayscale), creating the face recognition model (createLBPHFaceRecognizer), reading images from the directory, and saving the trained model.
-In summary, the project primarily utilizes the OpenCV library for image capture, face detection, face recognition, and training of the face recognition model. It also employs the pre-trained Haar cascade classifier for face detection.
